@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="uk.ac.aston.restaurantfinderapp"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/RestaurantMaterialTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAJcXyt-NFGTjNi-aXvmY8ByiaIcy2AVpM"/>
+
+        <activity android:name=".MainActivity"
+            android:theme="@style/RestaurantMaterialTheme"
+                  android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EateryListActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".SelectEateryTypeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SelectEateryTypeActivity" />
+        </activity>
+        <activity
+            android:name=".MapFragmentActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".EateryListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EateryListActivity" />
+        </activity>
+        <activity
+            android:name=".PlaceDetailActivity"
+            android:theme="@style/RestaurantMaterialTheme"
+            android:parentActivityName=".MapFragmentActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MapFragmentActivity" />
+        </activity>
+        <activity
+            android:name=".FavouriteListActivity"
+            android:theme="@style/RestaurantMaterialTheme"
+            android:parentActivityName=".MyAccountActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MyAccountActivity" />
+        </activity>
+        <activity
+            android:name=".FavouriteDetailActivity"
+            android:theme="@style/RestaurantMaterialTheme"
+            android:parentActivityName=".FavouriteListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".FavouriteListActivity" />
+        </activity>
+        <activity android:name=".RouteMapActivity"
+                  android:parentActivityName=".FavouriteDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".FavouriteDetailActivity"/>
+
+        </activity>
+        <activity android:name=".MyAccountActivity"
+                  android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".EateryVisitStatsActivity"
+                  android:parentActivityName=".MyAccountActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MyAccountActivity" />
+        </activity>
+        <activity android:name=".SelectEateryTypeActivity"
+                  android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

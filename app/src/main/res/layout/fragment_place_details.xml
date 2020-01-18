@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".Fragments.PlaceDetailFragment"
+                android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp">
+<!--<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Test"
+    android:textSize="23sp"
+    android:layout_marginLeft="160dp"
+    android:layout_marginTop="10dp"
+    />-->
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="110dp"
+        android:id="@+id/img"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/scrollView"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pDetail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"/>
+            <TextView
+                android:id="@+id/pDetail_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ad"
+                android:layout_below="@id/pDetail_name"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/pDetail_vicinity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vinicity"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/pDetail_reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reviews"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/addToFav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAddToFav"
+        android:layout_below="@id/scrollView"/>
+    <Button
+        android:id="@+id/beginRoute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/beginRoute"/>
+
+</LinearLayout>

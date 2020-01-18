@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">RestaurantFinderApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="startPage_title">Restaurant Finder</string>
+    <string name="confirm_btn">Confirm</string>
+    <string name="budget_hint"> e.g. 20, 35, 40</string>
+    <string name="budget_title">Set your maximum budget</string>
+    <string name="btn_setBudget">Set Budget</string>
+    <string name="btn_MyAccount">My Account</string>
+    <string name="btn_FindRestaurant">Find Restaurant</string>
+    <string name="title_activity_set_budget">SetBudget</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="google_app_id">704911723779</string>
+    <string name="text1">Hello world</string>
+    <string name="name">name</string>
+    <string name="vicinity">vicinity</string>
+    <string name="address">address</string>
+    <string name="reviews">reviews</string>
+    <string name="places_key">AIzaSyC6A-PEK0cOkPK3mKwZMtpcniqHrVNBPgU</string>
+    <string name="referer">http://aston.ac.uk/uk.ac.aston.restaurantfinderapp.model</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_view_map">View</string>
+    <string name="map">View Map</string>
+    <string name="search">Search</string>
+    <string name="select">Select</string>
+    <string name="journey">Journey</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="btnAddToFav">Add to Favourites</string>
+    <string name="beginRoute">Begin Route</string>
+    <string name="favourites">Favourites</string>
+    <string name="viewStats">My Restaurant Visits</string>
+    <string name="view">View</string>
+    <string name="deleteFromFav">Delete From Favourites</string>
+    <string name="eateryNameHeader">Restaurant</string>
+    <string name="noOfVisitHeader">No. of Visits</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="cafe">Cafe</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="fast_food">Fast Food</string>
+    <string name="currency">£</string>
+
+
+</resources>
